@@ -2,79 +2,158 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Дими сайт порт — портал услуг Димы</title>
+    <title>Дима Кузнецов — портал услуг</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="page-calendar">
     <header class="site-header">
       <div class="container header-inner">
         <div class="logo">дими сайт порт</div>
         <nav class="main-nav">
-          <a href="#about">Обо мне</a>
-          <a href="#services">Услуги</a>
-          <a href="#contact">Контакты</a>
+          <a href="#calendar">Услуги</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section id="hero" class="section hero">
-        <div class="container hero-inner">
-          <div>
-            <p class="eyebrow">Привет, я Дима</p>
-            <h1>Портал моих услуг, проектов и экспериментов</h1>
+      <section class="hero hero-top">
+        <div class="container hero-top-inner">
+          <div class="hero-top-image">
+            <!-- Положи сюда свою картинку: assets/img/dima-cover.jpg -->
+            <div class="hero-image-placeholder">
+              Тут будет твоя картинка (dima-cover.jpg)
+            </div>
+          </div>
+          <div class="hero-top-text">
+            <p class="eyebrow">мультиссылка</p>
+            <h1>Дима Кузнецов</h1>
             <p class="lead">
-              Здесь будут собраны все мои сервисы, ссылки, кейсы и творческие штуки.
-              Сайт сделан так, чтобы код, контент и логика были разнесены по разным файлам.
+              Портал моих творческих и дигитальных сервисов. Нажимай на даты‑услуги
+              в календаре ниже — каждая ведёт на отдельную страницу с описанием.
             </p>
-            <a href="#services" class="btn-primary">Смотреть услуги</a>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section">
+      <section id="calendar" class="section calendar-section">
         <div class="container">
-          <h2>Обо мне</h2>
-          <p>
-            Краткое интро про Диму. Здесь ты можешь описать, чем занимаешься:
-            дизайн, анимация, сценарии, кондитерка, эксперименты с ИИ и т.п.
-            Текст можно потом вынести в отдельный JSON или Markdown-файл.
-          </p>
-        </div>
-      </section>
+          <div class="calendar-card">
+            <header class="calendar-header">
+              <div class="calendar-month">Дима Кузнецов</div>
+              <div class="calendar-year">2025</div>
+            </header>
 
-      <section id="services" class="section section-alt">
-        <div class="container">
-          <h2>Услуги</h2>
-          <p class="section-note">
-            Список ниже подтягивается из файла <code>content/services.json</code> через JavaScript.
-          </p>
-          <div id="services-list" class="cards-grid">
-            <!-- Карточки услуг появятся здесь из JS -->
+            <div class="calendar-weekdays">
+              <span>ВС</span>
+              <span>ПН</span>
+              <span>ВТ</span>
+              <span>СР</span>
+              <span>ЧТ</span>
+              <span>ПТ</span>
+              <span>СБ</span>
+            </div>
+
+            <div class="calendar-grid">
+              <!-- Пустые ячейки, чтобы выровнять сетку примерно как в рефе -->
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+
+              <!-- Ряд с «чёрной закорючкой» можно будет заменить настоящей услугой позже -->
+              <a class="calendar-cell calendar-cell--service" href="services/creative-workshops.html">
+                <span class="calendar-date">01</span>
+                <span class="calendar-label">Творческие мастерские</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/kids-role-play.html">
+                <span class="calendar-date">02</span>
+                <span class="calendar-label">Детские ролевые игры / игровая терапия</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/mediations.html">
+                <span class="calendar-date">03</span>
+                <span class="calendar-label">Медиации</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/vibe-coding.html">
+                <span class="calendar-date">04</span>
+                <span class="calendar-label">Вайбкодинг</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/ai-digital-content.html">
+                <span class="calendar-date">05</span>
+                <span class="calendar-label">ИИ‑диджитал контент</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/telegram-bots.html">
+                <span class="calendar-date">06</span>
+                <span class="calendar-label">Создание TG‑ботов</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/media-restoration-upscale.html">
+                <span class="calendar-date">07</span>
+                <span class="calendar-label">Реставрация цифровых фото и видео, апскейл</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service calendar-cell--highlight" href="services/product-cards.html">
+                <span class="calendar-date">08</span>
+                <span class="calendar-label">Карточки товаров</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/ai-training.html">
+                <span class="calendar-date">09</span>
+                <span class="calendar-label">Тренировка ИИ</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/online-assistant.html">
+                <span class="calendar-date">10</span>
+                <span class="calendar-label">Онлайн‑помощник</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/ai-playlists-shops.html">
+                <span class="calendar-date">11</span>
+                <span class="calendar-label">ИИ‑плейлисты для магазинов</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/playlists-events.html">
+                <span class="calendar-date">12</span>
+                <span class="calendar-label">Плейлисты для мероприятий</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/horizontal-systems.html">
+                <span class="calendar-date">13</span>
+                <span class="calendar-label">Горизонтальная система управления</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/berezhny-football.html">
+                <span class="calendar-date">14</span>
+                <span class="calendar-label">Бережный футбол</span>
+              </a>
+
+              <a class="calendar-cell calendar-cell--service" href="services/free-choir.html">
+                <span class="calendar-date">15</span>
+                <span class="calendar-label">Свободный хор</span>
+              </a>
+
+              <!-- Остальные ячейки просто для заполнения сетки -->
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+              <div class="calendar-cell calendar-cell--empty"></div>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="container">
-          <h2>Контакты</h2>
-          <p>
-            Здесь могут быть ссылки на твои соцсети, Telegram, почту и т.п.
-          </p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:hello@dima-portal.dev">hello@dima-portal.dev</a></li>
-            <li><strong>Telegram:</strong> <a href="https://t.me/your_handle" target="_blank">@your_handle</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/your_username" target="_blank">your_username</a></li>
-          </ul>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>© <span id="year"></span> Дима. Все права — в процессе осознания.</span>
-        <span class="footer-note">Сделано на чистом HTML, CSS и JS — готово для GitHub Pages.</span>
+        <span>© <span id="year"></span> Дима Кузнецов.</span>
+        <span class="footer-note">Сделано как лист календаря — каждая дата это сервис.</span>
       </div>
     </footer>
 
