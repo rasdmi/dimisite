@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Дими сайт порт — портал услуг Димы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">дими сайт порт</div>
+        <nav class="main-nav">
+          <a href="#about">Обо мне</a>
+          <a href="#services">Услуги</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="section hero">
+        <div class="container hero-inner">
+          <div>
+            <p class="eyebrow">Привет, я Дима</p>
+            <h1>Портал моих услуг, проектов и экспериментов</h1>
+            <p class="lead">
+              Здесь будут собраны все мои сервисы, ссылки, кейсы и творческие штуки.
+              Сайт сделан так, чтобы код, контент и логика были разнесены по разным файлам.
+            </p>
+            <a href="#services" class="btn-primary">Смотреть услуги</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>Обо мне</h2>
+          <p>
+            Краткое интро про Диму. Здесь ты можешь описать, чем занимаешься:
+            дизайн, анимация, сценарии, кондитерка, эксперименты с ИИ и т.п.
+            Текст можно потом вынести в отдельный JSON или Markdown-файл.
+          </p>
+        </div>
+      </section>
+
+      <section id="services" class="section section-alt">
+        <div class="container">
+          <h2>Услуги</h2>
+          <p class="section-note">
+            Список ниже подтягивается из файла <code>content/services.json</code> через JavaScript.
+          </p>
+          <div id="services-list" class="cards-grid">
+            <!-- Карточки услуг появятся здесь из JS -->
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Контакты</h2>
+          <p>
+            Здесь могут быть ссылки на твои соцсети, Telegram, почту и т.п.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:hello@dima-portal.dev">hello@dima-portal.dev</a></li>
+            <li><strong>Telegram:</strong> <a href="https://t.me/your_handle" target="_blank">@your_handle</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/your_username" target="_blank">your_username</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Дима. Все права — в процессе осознания.</span>
+        <span class="footer-note">Сделано на чистом HTML, CSS и JS — готово для GitHub Pages.</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
